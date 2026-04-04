@@ -2,7 +2,7 @@ import { useExpenseContext } from "../context/ExpenseContext";
 import { CATEGORY_COLORS } from "./ExpenseForm";
 
 export default function BudgetAlert() {
-  const { exceededBudgets, spentByCategory, budgets } = useExpenseContext();
+  const { exceededBudgets, spentByCategory,  } = useExpenseContext();
 
   if (exceededBudgets.length === 0) return null;
 

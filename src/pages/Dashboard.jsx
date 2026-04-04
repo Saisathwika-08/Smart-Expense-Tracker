@@ -12,7 +12,7 @@ const card = (children, extra = {}) => ({
 });
 
 export default function Dashboard() {
-  const { expenses, budgets, spentByCategory } = useExpenseContext();
+  const { expenses, budgets } = useExpenseContext();
 
   const totalSpent = expenses.reduce((s, e) => s + e.amount, 0);
   const totalBudget = Object.values(budgets).reduce((s, v) => s + v, 0);
